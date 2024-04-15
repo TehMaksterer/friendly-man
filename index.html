@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shadows on The Wall Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+  <body>     
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Images/PacMan Blk.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Collection of Friends
+              </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#Ricci">Ricci</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Greg">Greg</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Ray">Ray</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="col-12">
+        <img src="Images/thumbnail_0f14b4e7-07ef-4d55-9551-6ebc5803f2a9.jpeg" alt="header image" width="100%" height=auto>
+    </div>
+    <div style="float: left;  margin: 12px;">
+        <h1>
+            A website dedicated to my really good friends
+        </h1>
+        <p>
+            These three boys met at school. They became friends over a love of late night gaming on Counter Strike, rock music which later became a band, and the persuit of further knowledge.
+            Each one left school to pursue further education and obtained Masters in STEM degrees and later doctorates. 
+            This is a small tribute to how far they have come since they had met at school 18 years ago. 
+        </p>
+    </div>
+
+<div class = "row" style="background-color: lightcyan; padding:5px " id="Ricci">
+        <div class="col-8" style="float: left;  margin: 10px;">
+        <h1>
+            Dr. Rickbir Singh Bahia
+        </h1>
+        <p>
+            Dr. Rickbir Bahia is a prominent figure in the field of planetary science, known for his groundbreaking research and contributions to the understanding of the river channels on Mars.
+            His contributions to research have been utilised in the private sector providing guidance to Rolls-Royce on their aeroplane engines across the world.
+            His research has encompassed a diverse range of topics, including the geological history of Mars.
+            Dr Bahia is an accomplished bassist having performed across Europe including cities rich in music such as Manchester, Leeds, and Amsterdam.
+        </p>
+        <h4> Links to Papers</h4>
+        <ol> 
+            <ul>A Major Missing Component -Aeolian-Fluvial Interaction on Ancient Mars</ul>
+            <ul> Martian Valley Networks and their lack of Headwater Catchment Areas </ul>
+            <ul> Modelling River-Dune Interactions on Ancient Mars </ul>
+        </ol>
+        <a class="nav-link" href="#Contact" id="populateButton"> Click here to send an email to Ricci</a>
+        <script>
+            document.getElementById('populateButton').addEventListener('click', function(){
+                const phrases = ['Your work on Aeolian-Fluvial interactions is profound however I cannot get over the fact you will not advocate for jundis on the ISS due to their smell. ', 'Please consider using Dapper Dan pomade on your beard rather than Fop. It will give you a less straggly beard as this is often the problem with finding hairs on the machines at the ESA.', 'Whilst you claim there "were" river channels on Mars. You have failed to confirm whether there are TV channels on there. How are we supposed to believe that there is water on Mars if they cannot watch the weather channel?']
+                const randomIndex = Math.floor(Math.random()* phrases.length);
+                const randomPhrase = phrases [randomIndex];  
+                const textArea = document.getElementById('textGoHere');
+                textArea.value = randomPhrase;
+            });
+        </script>
+        </div>
+        <div class="col-3" style="align-items: end; margin: 10px;">
+            <table> 
+            <tr>
+                <td colspan="2">
+                <img src = "Images/Rickbir-Bahia-ESA-2-672x381.png" alt="Ricci Bahia" style="width: 155.5mm; height: auto">
+            </td>
+            </tr>
+            <tr><td><img id="RicX" src = "Images/Logo_of_Twitter.svg.png" width="100px" height="100px">
+                <script>
+                    var image = document.getElementById("RicX");
+                    image.addEventListener("click", function() {
+                        window.location.href = "https://twitter.com/rickbirb";
+                    });
+                </script>
+            <img id="RicLinked" src = "Images/LinkedIn_icon.svg" width="100px" height="100px"> 
+            <script>
+                var image = document.getElementById("RicLinked");
+                image.addEventListener("click", function() {
+                    window.location.href = "https://www.linkedin.com/in/rickbir-bahia-9b76642a5/";
+                });
+            </script>
+            </td></tr>
+            </table>
+        </div>
+</div>
+
+<div class = "row" style="background-color: aliceblue; padding:5px" id="Greg">
+    <div class="col-8" style="float: left;  margin: 10px;">
+        <h1>
+            Dr Gregory Farquhar
+        </h1>
+        <p>
+            Greg is a DPhil student at the University of Oxford under the supervision of Shimon Whiteson. Previously, Greg obtained a Masters in Physics (1st class honours) from the University of Oxford. Greg was a former intern of NASA JPL and Facebook AI Research.
+            His research is about learning optimal sequential decision making from data, primarily in the framework of reinforcement learning (RL). Key areas of focus include cooperative multi-agent RL, learning to plan, curriculum learning, and (any-order) gradient estimation.
+        </p>
+        <h4> Links to Papers</h4>
+        <ol> 
+            <ul> Loaded DiCE: Trading off Bias and Variance in Any-Order Score Function Estimators for Reinforcement Learning.</ul>
+            <ul> TreeQN and ATreeC: Differentiable Tree Planning for Deep Reinforcement Learning. </ul>
+            <ul> Counterfactual multi-agent policy gradients </ul>
+        </ol>
+        <a class="nav-link" href="#Contact" id="populateButtons"> Click here to send an email to Greg</a>
+        <script>
+            document.getElementById('populateButtons').addEventListener('click', function(){
+                const phrases = ['Your work on Aeolian-Fluvial interactions is profound however I cannot get over the fact you will not advocate for jundis on the ISS due to their smell. ', 'Please consider using Dapper Dan pomade on your beard rather than Fop. It will give you a less straggly beard as this is often the problem with finding hairs on the machines at the ESA.', 'Whilst you claim there "were" river channels on Mars. You have failed to confirm whether there are TV channels on there. How are we supposed to believe that there is water on Mars if they cannot watch the weather channel?']
+                const randomIndex = Math.floor(Math.random()* phrases.length);
+                const randomPhrase = phrases [randomIndex];  
+                const textArea = document.getElementById('textGoHere');
+                textArea.value = randomPhrase;
+            });
+        </script>
+        </div>
+        <div class="col-3" style="float:right; margin: 10px;">
+            <table> 
+                <tr>
+                    <td colspan="2">
+                    <img src = "Images/greg_farquhar.jpeg" alt="Gregory Farquhar" style="width: 155.5mm; height: auto">
+                </td>
+                </tr>
+                <tr><td><img id="GregX" src = "Images/Logo_of_Twitter.svg.png" width="100px" height="100px">
+                    <script>
+                        var image = document.getElementById("GregX");
+                        image.addEventListener("click", function() {
+                            window.location.href = "https://twitter.com/greg_far";
+                        });
+                    </script>
+                <img id="GregLink" src = "Images/LinkedIn_icon.svg" width="100px" height="100px"> 
+                <script>
+                    var image = document.getElementById("GregLink");
+                    image.addEventListener("click", function() {
+                        window.location.href = "https://www.linkedin.com/in/greg-farquhar-a20a61110/";
+                    });
+                </script>
+                </td></tr>
+                </table>
+        </div>
+</div>
+
+
+<div class = "row" style="background-color: lightsteelblue; padding:5px" id="Ray">
+
+    <div class="col-8" style="float: left;  margin: 10px;">
+    <h1>
+        Raymond Mak
+    </h1>
+    <p>
+        A pharmacist during the day, a coder in the night. He wrote this website using the lessons taught by The Coder's Guild.
+        He may be smiling in the picture but he is actually very tired almost all of the time.
+    </p>
+    <p>
+        He also wrote this website
+    </p>
+    <br>
+    <a class="nav-link" id='rayContactClick'> Click here to send an email to Ray</a>
+    <script>
+    const rayContact = document.querySelector('#rayContactClick');
+    function rayAlert(){
+        alert('check the footer for contact')
+        }
+    rayContact.addEventListener("click", rayAlert);
+    </script>
+    
+    </div>
+    <div class="col-3" style="float:right; margin: 10px;">
+        <table> 
+            <tr>
+                <td colspan="2">
+                <img src = "Images/Ray.jpeg" alt="Ricci Bahia" style="width: 155.5mm; height: auto">
+            </td>
+            </tr>
+            <tr><td><img id="RayX" src = "Images/Logo_of_Twitter.svg.png" width="100px" height="100px">
+                <script>
+                    var image = document.getElementById("RayX");
+                    image.addEventListener("click", function() {
+                        window.location.href = "https://twitter.com/maksterspeaks";
+                    });
+                </script>
+            <img id="RayLinked" src = "Images/LinkedIn_icon.svg" width="100px" height="100px"> </td></tr>
+                <script>
+                    var image = document.getElementById("RayLinked");
+                    image.addEventListener("click", function() {
+                        window.location.href = "https://www.linkedin.com/in/raymond-mak-2152a356/";
+                    });
+                </script>
+            </table>
+</div>
+</div>
+
+<br />
+
+<div class = "row" style="background-color:whitesmoke " id="Contact"></div>
+    <div class="col-12" style="float: left;  margin: 10px;">
+<h1>
+    Contact
+</h1>
+<fieldset style="margin: 25px;">
+<form action="mail to:raymond.mak@hotmail.co.uk" method="GET">
+    <label> Name: <br />
+    <input type = "text" name = "name" style="width: 500px;"/> </label> <br />
+    <label> Email: <br />
+    <input type = "email" name = "email" style="width: 500px;"/> </label> <br />
+    <label> Subject: <br />
+    <input type = "text" name = "Subject" style="width: 500px;"/> </label> <br />
+    <label> Comment: <br />
+    <textarea id="textGoHere" style="height: 250px; width: 500px;"> </textarea>
+    <br />
+    <input type ="submit" value="submit" />
+</fieldset>
+</form>
+</div>
+<div>
+<footer class ="container my-5"> 
+    © 2024. Produced by raymondnokuso. <a href="mailto:raymond.mak92@gmail.com"> Contact me here - will open your default email client</a>
+</footer>
+</div>
+</html>
